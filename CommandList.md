@@ -35,6 +35,7 @@
 ##### docker run -d -p 8080:80 httpd
 - running on back ground.
 - allocate localhost port(8080) to container port(80) using httpd image.
+- check IP using docker-machine env or docker-machine ip (192.168.99.100)
 
 ##### docker ps -a -f "name=xxxx"
 - show container list.
