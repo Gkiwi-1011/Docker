@@ -46,4 +46,4 @@
 - connect the container
 
 ##### docker exec -it [container id] /bin/bash
-
+- connect the container using another process.
