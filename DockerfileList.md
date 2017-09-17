@@ -30,6 +30,6 @@
 - deploy applications.
 1. create a Dockerfile.base for a base image.(define ONBUILD)
 2. `docker build -t base -f Dockerfile.base .` (The current directory include Dockerfile.base.)
-3. create a deploy file (tar file.) & Dockerfile that is FROM the above base image.
+3. create a deploy file (tar file using `tar -cvf xxx.tar DIR`.) & Dockerfile that is FROM the above base image.
 4. `docker build -t web .` (The current directory includes the Dockerfile and the tar file.)
 
