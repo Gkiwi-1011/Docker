@@ -12,10 +12,10 @@
 ##### Install a docker compose on docker-machine as a root authentication.
 - Refer to `https://github.com/docker/compose/releases`
 
-##### image
+##### image syntax
 - Specify a image name.
 
-##### build
+##### build syntax
 - Specify a Dockerfile directory.
 
 ##### `docker-compose -f COMPOSE_FILE_PATH up`
