@@ -8,7 +8,7 @@
 - A share directory is `/Users/Shared`.
 - A root volume(/) is `tmpfs`.
 
-##### docker pull centos:7
+##### `docker pull centos:7`
 - Download centos 7 from Docker Hub.
 
 ##### `docker-machine ssh default`
