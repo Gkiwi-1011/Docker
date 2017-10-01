@@ -41,6 +41,6 @@ __Configure & Manage Dockers__
 - Docker Swarm: Clustering Management
 - Docker Machine: Building Execution Environment
 
-__Share Dockers__
+__Share Docker images__
 - Docker Registry
-
+- Docker Hub

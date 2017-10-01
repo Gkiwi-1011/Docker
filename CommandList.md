@@ -1,10 +1,17 @@
 
 ### Command List
 
-#### Docker Quick Start Terminal
+##### Docker Quick Start Terminal
 - Boot Docker VM.
 
-#### `docker-machine ssh default`
+##### Share Directory between Mac(Virtual Box host) and Docker-machine(Virtual Box image)
+- A share directory is `/Users/Shared`.
+- A root volume(/) is `tmpfs`.
+
+##### docker pull centos:7
+- Download centos 7 from Docker Hub.
+
+##### `docker-machine ssh default`
 - login docker VM.
 
 ##### `docker run centos:7 /bin/echo 'Hello '`
@@ -40,7 +47,7 @@
 ##### `docker ps -a -f "name=xxxx"`
 - show container list.
 
-#### `docker rm [container id]`
+##### `docker rm [container id]`
 - remove the container.
 
 ##### `docker attach [container id]`
@@ -48,3 +55,22 @@
 
 ##### `docker exec -it [container id] /bin/bash`
 - connect the container using another process.
+
+##### `docker-machine env`
+- check docker info(IP, Name, Path etc.)
+
+##### `docker build -t log-image /Users/Shared/Dockerfiles/log-image/`
+- Create a log management container image.
+
+##### `docker build -t web-image /Users/Shared/Dockerfiles/web-image/`
+- Create a web server container image.
+
+##### `docker run -it --name log-container log-image`
+- Run a log management container.
+
+###### `docker run -d --name web-container1 -p 80:80 --volumes-from log-container web-image`
+###### `docker run -d --name web-container2 -p 8080:80 --volumes-from log-container web-image`
+- Run  web server containers.
+
+###### `docker exec -it web-container1 /bin/bash`
+- Login web server containers.

@@ -33,3 +33,15 @@
 3. create a deploy file (tar file using `tar -cvf xxx.tar DIR`.) & Dockerfile that is FROM the above base image.
 4. `docker build -t web .` (The current directory includes the Dockerfile and the tar file.)
 
+
+#### ENTRYPOINT
+- execute specified commands forcibly out of start option command(docker run).
+
+#### ENV
+- define environment parameters (PATH etc.).
+
+#### ADD [URL(http://www.../a.js), host file path(docker-machine)] [/container dir]
+
+#### VOLUME [/mount point]
+- Centrally manage file (log etc) among the same of containers.
+
