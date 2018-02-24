@@ -44,3 +44,12 @@ __Configure & Manage Dockers__
 __Share Docker images__
 - Docker Registry
 - Docker Hub
+
+Host PC accesses Dockers on Vagrant by HTTP request
+- Enable `config.vm.network "private_network", ip: "192.168.33.10"` on Vagrantfile
+- Add `-p 8080:80` as a docker run command option
+- Request `http://192.168.33.10:8080` as a HTTP request.
+
+
+
+
